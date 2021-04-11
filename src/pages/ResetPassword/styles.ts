@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
+import styled, { keyframes } from 'styled-components';
+import signInImage from '../../assets/sign-up-background.png';
 
-import signInImage from '../../assets/sign-in-background.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -38,6 +38,11 @@ export const AnimationContainer = styled.div`
   justify-content: center;
 
   animation: ${appearFromLeft} 1s;
+
+  >img {
+    width: 350px;
+    height: 150px;
+  }
 
   form {
     margin: 80px 0;

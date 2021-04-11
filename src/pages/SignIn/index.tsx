@@ -1,21 +1,21 @@
-import React, { useRef, useCallback } from 'react';
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
-import * as Yup from 'yup';
+import React, { useCallback, useRef } from 'react';
+import { FiLock, FiLogIn, FiMail } from 'react-icons/fi';
 import { Link, useHistory } from 'react-router-dom';
-
+import * as Yup from 'yup';
+import logo from '../../assets/logo.png';
+import Button from '../../components/Button';
+import Input from '../../components/Input';
 import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
-
 import getValidationErrors from '../../utils/getValidationErrors';
+import { AnimationContainer, Background, Container, Content } from './styles';
 
-import logo from '../../assets/logo.svg';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
 
-import { Container, Content, AnimationContainer, Background } from './styles';
+
+
 
 interface SignInFormData {
   email: string;

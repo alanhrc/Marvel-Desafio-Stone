@@ -29,6 +29,8 @@
       "prettier"
   ],
   "rules": {
+    "react/require-default-props": "off",
+    "react/destructuring-assignment": "off",
     "import/no-duplicates": "off",
     "@typescript-eslint/camelcase": "off",
     "prettier/prettier": "error",

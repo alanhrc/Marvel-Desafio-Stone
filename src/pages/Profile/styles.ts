@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { shade } from 'polished';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   > header {
@@ -74,7 +74,7 @@ export const AvatarInput = styled.div`
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #ff9000;
+    background: #c53030;
     right: 0;
     bottom: 0;
     border: 0;
@@ -96,7 +96,7 @@ export const AvatarInput = styled.div`
     }
 
     &:hover {
-      background: ${shade(0.2, '#ff9000')};
+      background: ${shade(0.2, '#c53030')};
     }
   }
 `;

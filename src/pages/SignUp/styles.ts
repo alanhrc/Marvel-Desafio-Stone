@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
-
+import styled, { keyframes } from 'styled-components';
 import signUpImage from '../../assets/sign-up-background.png';
+
 
 export const Container = styled.div`
   height: 100vh;
@@ -39,6 +39,11 @@ export const AnimationContainer = styled.div`
 
   animation: ${appearFromRight} 1s;
 
+  >img {
+    width: 350px;
+    height: 150px;
+  }
+
   form {
     margin: 80px 0;
     width: 340px;
@@ -62,7 +67,7 @@ export const AnimationContainer = styled.div`
   }
 
   > a {
-    color: #ff9000;
+    color: #c53030;
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -72,7 +77,7 @@ export const AnimationContainer = styled.div`
     align-items: center;
 
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, '#c53030')};
     }
 
     svg {
